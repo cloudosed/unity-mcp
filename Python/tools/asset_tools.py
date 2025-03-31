@@ -130,7 +130,7 @@ def register_asset_tools(mcp: FastMCP):
             
             prefab_exists = any(asset.get("path") == prefab_path for asset in prefab_assets)
             if not prefab_exists:
-                return f"Prefab '{prefab_path}' not found in the project."
+                return f"ALL Prefabs:'{prefab_assets}  ;;  'Prefab '{prefab_path}' not found in the project."
             
             response = unity.send_command("INSTANTIATE_PREFAB", {
                 "prefab_path": prefab_path,
