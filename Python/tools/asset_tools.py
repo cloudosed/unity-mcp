@@ -122,15 +122,15 @@ def register_asset_tools(mcp: FastMCP):
                 prefab_name = f"{prefab_name}.prefab"
                 prefab_path = f"{prefab_path}.prefab"
                 
-            prefab_assets = unity.send_command("GET_ASSET_LIST", {
-                "type": "Prefab",
-                "search_pattern": prefab_name,
-                "folder": prefab_dir
-            }).get("assets", [])
+            # prefab_assets = unity.send_command("GET_ASSET_LIST", {
+            #     "type": "Prefab",
+            #     "search_pattern": prefab_name,
+            #     "folder": prefab_dir
+            # }).get("assets", [])
             
-            prefab_exists = any(asset.get("path") == prefab_path for asset in prefab_assets)
-            if not prefab_exists:
-                return f"ALL Prefabs:'{prefab_assets}  ;;  'Prefab '{prefab_path}' not found in the project."
+            # prefab_exists = any(asset.get("path") == prefab_path for asset in prefab_assets)
+            # if not prefab_exists:
+            #     return f"ALL Prefabs:'{prefab_assets}  ;;  'Prefab '{prefab_path}' not found in the project."
             
             response = unity.send_command("INSTANTIATE_PREFAB", {
                 "prefab_path": prefab_path,
