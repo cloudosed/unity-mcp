@@ -5,6 +5,8 @@ from .editor_tools import register_editor_tools
 from .asset_tools import register_asset_tools
 from .object_tools import register_object_tools
 
+from .model_tools import register_model_tools  # sketchfab
+
 def register_all_tools(mcp):
     """Register all tools with the MCP server."""
     register_scene_tools(mcp)
@@ -13,3 +15,4 @@ def register_all_tools(mcp):
     register_editor_tools(mcp)
     register_asset_tools(mcp)
     register_object_tools(mcp)
+    register_model_tools(mcp)  # sketchfab

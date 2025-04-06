@@ -34,6 +34,9 @@ namespace UnityMCP.Editor.Commands
             { "SELECT_OBJECT", parameters => ObjectCommandHandler.SelectObject(parameters) },
             { "GET_SELECTED_OBJECT", _ => ObjectCommandHandler.GetSelectedObject() },
 
+            // Sketchfab commands
+            { "IMPORT_SKETCHFAB_MODEL", parameters => SketchfabCommandHandler.ImportSketchfabModel(parameters) },
+
             // Editor control commands
             { "EDITOR_CONTROL", parameters => EditorControlHandler.HandleEditorControl(parameters) }
         };
