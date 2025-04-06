@@ -1,6 +1,6 @@
 {
   "name": "com.cloudosed.unity-mcp",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "displayName": "Unity MCP",
   "description": "A Unity package to communicate with a local MCP Client via a Python server.",
   "unity": "2020.3",

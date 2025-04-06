@@ -1,7 +1,7 @@
 using UnityEngine;
+using UnityEditor;
 using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
 
 namespace UnityMCP.Editor.Commands
 {
