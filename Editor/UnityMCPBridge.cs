@@ -306,6 +306,7 @@ namespace UnityMCP.Editor
                     "APPLY_PREFAB" => AssetCommandHandler.ApplyPrefab(command.@params),
                     "GET_ASSET_LIST" => AssetCommandHandler.GetAssetList(command.@params),
                     "EDITOR_CONTROL" => EditorControlHandler.HandleEditorControl(command.@params),
+                    "IMPORT_SKETCHFAB_MODEL" => SketchfabCommandHandler.ImportSketchfabModel(command.@params),
                     _ => throw new Exception($"Unknown command type: {command.type}")
                 };
 

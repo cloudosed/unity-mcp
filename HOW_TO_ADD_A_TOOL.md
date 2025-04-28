@@ -47,6 +47,13 @@ public static class CommandRegistry
 }
 ```
 
+### 2.5 REMERBER TO MODIFY THE "UnityMCPBridge.cs" FILE
+
+        private static string ExecuteCommand(Command command)
+
+        '' ADD YOUR OWN EXEC
+
+
 ### 3. Create the Python Tool
 
 Add your tool to the appropriate Python module in the `Python/tools` directory:

@@ -71,7 +71,7 @@ def asset_creation_strategy() -> str:
         "   - `find_objects_by_name(name)` - Find objects by name\n"
         "   - `get_hierarchy()` - Get object hierarchy\n"
         "4. **Sketchfab Model Management**\n"
-        "   - ALWAYS use `import_sketchfab_model(keyword, bounds)` to import a sketchfab model to scene\n"
+        "   - import_sketchfab_model(keyword, bounds) - import a sketchfab model to scene\n"
         "5. **Script Management**\n"
         "   - ALWAYS use `list_scripts(folder_path)` or `view_script(path)` to check if a script exists before creating or updating it\n"
         "   - `create_script(name, type, namespace, template)` - Create scripts\n"
